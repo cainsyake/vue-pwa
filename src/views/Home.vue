@@ -23,7 +23,7 @@ export default {
   methods: {
     handleCountClick () {
       this.count++
-      localStorage.count = this.this.count
+      localStorage.count = this.count
     }
   },
   async mounted () {
