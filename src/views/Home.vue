@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <HelloWorld msg="Welcome to Vue pwa App"/>
     <div @click="handleCountClick">点击次数：{{count}}</div>
   </div>
 </template>
