@@ -1,0 +1,15 @@
+{
+  "name": "incloud-mobile",
+  "short_name": "incloud-mobile",
+  "icons": [
+    {
+      "src": "./img/icons/logo-min.jpg",
+      "sizes": "91x91",
+      "type": "image/jpg"
+    }
+  ],
+  "start_url": "/?pwa=1",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#2d8cf0"
+}

@@ -8,6 +8,31 @@
   </div>
 </template>
 
+<script>
+
+export default {
+  components: {
+  },
+  data () {
+    return {
+    }
+  },
+  methods: {
+    initPath () {
+      if (this.$route.query && this.$route.query.pwa) {
+        const lastPath = localStorage.lastPath
+        this.$router.push({
+          path: lastPath
+        })
+      }
+    }
+  },
+  async mounted () {
+    this.initPath()
+  }
+}
+</script>
+
 <style lang="stylus">
 #app
   font-family 'Avenir', Helvetica, Arial, sans-serif

@@ -24,4 +24,11 @@ const router = new VueRouter({
   routes
 })
 
+router.beforeEach(async (to, from, next) => {
+  if (from.name !== null) {
+    localStorage.lastPath = to.path
+  }
+  next()
+})
+
 export default router
